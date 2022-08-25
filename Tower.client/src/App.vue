@@ -5,11 +5,6 @@
   <main>
     <router-view />
   </main>
-  <footer>
-    <div class="bg-dark text-light text-center p-4">
-      Made with 💖 by CodeWorks
-    </div>
-  </footer>
 </template>
 
 <script>
@@ -27,4 +22,14 @@ export default {
 </script>
 <style lang="scss">
 @import "./assets/scss/main.scss";
+
+main{
+  background-color: #2a2d3a;
+  font-family: 'Aboreto', cursive;
+}
+
+header{
+  font-family: 'Aboreto', cursive;
+}
+
 </style>
