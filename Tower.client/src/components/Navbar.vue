@@ -6,31 +6,33 @@
         <div>Tower</div>
       </div>
     </router-link>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarText"
-      aria-controls="navbarText"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon" />
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" />
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto">
       </ul>
       <!-- LOGIN COMPONENT HERE -->
+      <button type="button" class="btn btn-outline-light mx-5" data-bs-toggle="modal" data-bs-target="#create-event">Create Event</button>
+      <Modal id="create-event">
+        <EventForm/>
+      </Modal>
+      
+      
       <Login />
     </div>
+
   </nav>
 </template>
 
 <script>
+import EventForm from './EventForm.vue';
 export default {
-  setup() {
-    return {};
-  },
+    setup() {
+        return {};
+    },
+    components: { EventForm }
 };
 </script>
 
